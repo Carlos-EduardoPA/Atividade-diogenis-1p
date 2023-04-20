@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: rgb(168, 250, 250);">
+    <h1>Pedido de Empréstimo</h1>
+    <hr> 
+    <form action="enviodados.php" method="post" >
+        <fieldset>
+        <legend">Informações do Aplicante</legend>
+
+        <label for="1-nome">Primeiro Nome: </label>
+        <input type="text" name="1-nome" placeholder="John"> <br><br>
+
+        <label for="2-nome">Sobrenome: </label>
+        <input type="text" name="2-nome" placeholder="Smith"><br> <br>
+
+        <label for="email">Email: </label>
+        <input type="email" name="email" placeholder="Digite seu email"> <br><br>
+
+        <label for="phone">Número: </label>
+        <input type="number" name="phone" placeholder="ex: 83-8888 9999"><br><br>
+    </form>
+</fieldset>
+<br><br><br>
+    <form action="dot.php" method="post" autocomplete="on">
+        <fieldset>
+        <legend>Informacôes de Empréstimo</legend>
+
+        <label for="tpemp">Tipo de Empréstimo</label>
+        <select name="tpemp" id="tpemp">
+            <option value="automovel">Automovel</option>
+            <option value="imovel">Imóvel</option>
+        </select><br><br>
+
+        <label for="quant">Quantidade de Empréstimo</label>
+        <input type="number" name="quant" placeholder="$15000"><br><br>
+
+        <label for="descr">Descrição</label> <br>
+        <textarea name="descr" id="descr" cols="30" rows="10"></textarea> <br> <br>
+
+        <label for="enviar">Enviar Pedido: </label>
+        <input type="submit" value="Enviar">
+    </fieldset>
+    </form>
+    <hr>
+<br><br><br><br>
+
+    <form action="dot.php" method="post">
+        <fieldset> 
+            <legend>Nome, sexo, escolaridade</legend>
+
+        <label for="name2"><b>Nome:</b></label>
+        <input type="text" name="nome2" placeholder="Digite seu nome: "><br><br>
+
+        <label for="sex"><b>Sexo: </b></label> <br>
+        <label for="sexM">Masculino</label>
+        <input type="radio" name="sexM" id="sexM">
+
+        <label for="sexF">Feminino</label>
+        <input type="radio" name="sexM" id="sexF">
+<br><br>
+            <label for="escolaridade">Escolaridade: </label>
+        <select name="escolaridade" id="escola">
+            <option value="1-grau">1 grau</option>
+            <option value="2-grau">2 grau</option>
+            <option value="superior">superior</option>
+        </select>
+    </fieldset>
+    </form>
+<hr> <br><br><br>
+
+    <form action="dor.php" method="post">
+        <fieldset>
+            <legend>Cartão de Crédito: </legend>
+
+            <label for="numcc">Número</label>
+            <input type="number" name="numcc" placeholder="****-****-****-****"><br>
+            
+            <label for="bandeira">Bandeira</label>
+
+            <input type="radio" name="bandeira" id="visa">
+            <label for="bandeira"><img src="https://noticiasconcursos.com.br/wp-content/uploads/2022/02/noticiasconcursos.com.br-cartao-de-credito-visa-confira-opcoes-com-e-sem-anuidade-cartao-de-credito-com-ou-sem-anuidade-visa.jpg" alt="" width="50px" height="40px"></label>
+            
+            <input type="radio" name="bandeira" id="mastercard">
+            <label for="bandeira"><img src="https://www.mobills.com.br/blog/wp-content/uploads/2022/06/logo-da-bandeira-mastercard.png" alt="" width="50px" height="40px"></label>
+<br><br>
+            <label for="validade">Validade</label>
+            <select name="validade" id="validade">
+                <option value="2024">2024</option>
+                <option value="2025">2025</option>
+                <option value="2026">2026</option>
+                <option value="2027">2027</option>
+                <option value="2028">2028</option>
+            </select>
+     
+        </fieldset>
+        
+    </form>
+<br><br><br><br><br>
+
+    <form action="dot.php" method="post">
+        <fieldset>
+            <legend>Informações do aquario</legend>
+            <label for="ph">Ph do aquario</label> <br>
+<br>    
+            <label for="ph">ácido</label>
+            <input type="radio" name="ph" id="acido">
+            
+            <label for="ph">alcalino</label>
+            <input type="radio" name="ph" id="alcalino">
+
+            <fieldset>
+                <legend>peixes</legend>
+                
+                <label for="quantp">Quantidade</label>
+                <input type="number" name="quantp">
+<br><br>
+
+                <label for="especie">Espécie</label>
+                <select name="especie" id="peixe">
+                    <option value="espada">espada</option>
+                    <option value="molinesia">molinesia</option>
+                    <option value="plati">plati</option>
+
+                </select>
+            </fieldset> <br><br>
+            <label for="outros">Outros: </label><br>
+
+            <label for="pedras">pedras:</label>
+            <input type="radio" name="pedras"> <br>
+            
+            <label for="plantas">plantas: </label>
+            <input type="radio" name="plantas">
+        </fieldset>
+    </form>
+</body>
+</html>
